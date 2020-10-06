@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codebits Book Library</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+</head>
+<body onload="displayStudents()">
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h1><i class="fa fa-address-book text-primary"></i>Students <span class="text-danger">Management</span> System</h1>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-sm-12">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" autofocus id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="email" autofocus id="email">
+                    </div>
+
+
+                    <div class="form-group">
+                        
+                        <select id="inputState" class="form-control">
+                          <option selected id="gender">Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </div>
+
+                  
+                
+
+                      <div class="form-group">
+                        
+                        <select id="inputState" class="form-control">
+                          <option selected id="course">course</option>
+                          <option>english</option>
+                          <option>mathematics</option>
+                          <option>french</option>
+                          <option>Fine arts</option>
+                          <option>physics</option>
+                          <option>commerce</option>
+                          <option>biology</option>
+                        </select>
+                      </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control btn btn-danger btn-block" value="Register Student" id="addBtn">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control btn  btn-block" value=" 0 Students Registered" id="counter">
+                    </div>
+
+
+                </form>
+
+                <table class="table table-striped mt-5">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>email</th>
+                            <th>course</th>
+                            <th>Gender</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentList"></tbody>
+                </table>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
