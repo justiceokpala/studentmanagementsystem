@@ -58,6 +58,7 @@ function storeStudent(student) {
     }else {
         students = JSON.parse(localStorage.getItem('students'));
         students.push(student);
+        location.reload();
         
         localStorage.setItem("students" , JSON.stringify(students));
        
